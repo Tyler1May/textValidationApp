@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Please login " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h14-Pz-2Ow">
-                                <rect key="frame" x="20" y="80.666666666666671" width="353" height="20.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Please login " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h14-Pz-2Ow">
+                                <rect key="frame" x="20" y="80.666666666666671" width="353" height="49.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,8 +31,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-CK-HuD">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-CK-HuD">
                                         <rect key="frame" x="0.0" y="42.333333333333343" width="243" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -44,6 +45,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-Kx-OLV">
                                         <rect key="frame" x="0.0" y="140.66666666666669" width="243" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -66,6 +68,8 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wud-Im-DSn">
                                 <rect key="frame" x="151" y="409" width="65.666666666666686" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
@@ -74,17 +78,18 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="yjY-IU-zzI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Air-nZ-XwN"/>
                             <constraint firstItem="h14-Pz-2Ow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Deb-BK-yxb"/>
                             <constraint firstItem="wud-Im-DSn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="Gko-Oe-bqf"/>
                             <constraint firstItem="wud-Im-DSn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lr0-BR-JDB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjY-IU-zzI" secondAttribute="trailing" constant="50" id="LrT-x5-ZVc"/>
+                            <constraint firstItem="yjY-IU-zzI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="Nzc-Dh-HHb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yjY-IU-zzI" secondAttribute="bottom" constant="463.32999999999998" id="Od3-ld-yhv"/>
                             <constraint firstItem="h14-Pz-2Ow" firstAttribute="centerX" secondItem="yjY-IU-zzI" secondAttribute="centerX" id="c12-yg-aYa"/>
-                            <constraint firstItem="yjY-IU-zzI" firstAttribute="top" secondItem="h14-Pz-2Ow" secondAttribute="bottom" constant="79" id="dIz-md-ilb"/>
                             <constraint firstItem="h14-Pz-2Ow" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21.666666666666686" id="deb-DL-lAf"/>
+                            <constraint firstItem="yjY-IU-zzI" firstAttribute="top" secondItem="h14-Pz-2Ow" secondAttribute="bottom" constant="50" id="faW-r0-CH2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h14-Pz-2Ow" secondAttribute="trailing" constant="20" id="mcj-v7-OLW"/>
                             <constraint firstItem="wud-Im-DSn" firstAttribute="top" secondItem="yjY-IU-zzI" secondAttribute="bottom" constant="54.333333333333371" id="pSq-Ia-V0p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wud-Im-DSn" secondAttribute="trailing" symbolic="YES" id="uBR-Z6-Slx"/>
@@ -92,6 +97,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="h14-Pz-2Ow" id="iKe-pO-qth"/>
+                        <outlet property="loginButton" destination="wud-Im-DSn" id="U1e-Ga-opU"/>
                         <outlet property="passwordTextField" destination="MQ6-Kx-OLV" id="HSV-Lc-0o9"/>
                         <outlet property="usernameTextField" destination="QEz-CK-HuD" id="9jP-S2-MMW"/>
                     </connections>
@@ -102,8 +108,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
